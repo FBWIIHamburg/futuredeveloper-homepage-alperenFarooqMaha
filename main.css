@@ -398,3 +398,52 @@ img {
 
 
 /* maha work space */
+.maincontainre{
+    position: relative;
+    width: 100vh;
+    height: 90vh;
+}
+.nav-icons{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    position: absolute;
+    top: 43rem;
+    width: 100%;
+    height: 10rem;
+    /* background-color: green; */
+
+}
+input[type=checkbox]{
+    display: none;
+}
+.fa-code{
+    padding: 1rem 1rem;
+    font-size: 5rem;
+    color: #097aa5;
+    /* display: inline-block; */
+
+}
+.fa-puzzle-piece{
+    padding: 1rem 1rem;
+    font-size: 5rem;
+    color: #b33a2b;
+    /* display: inline-block; */
+
+}
+.fa-brain{
+    padding: 1rem 1rem;
+    font-size: 5rem;
+    color: #3b5998;
+}
+.fa-users{
+    padding: 1rem 1rem;
+    font-size: 5rem;
+    color: #b33a2b;
+}
+label>span{
+    /* display: block; */
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
