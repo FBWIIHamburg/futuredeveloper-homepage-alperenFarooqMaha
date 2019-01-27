@@ -1,11 +1,5 @@
 /* alperen work space */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 img {
     width: 100vw;
     height: 100vh;
@@ -397,20 +391,59 @@ img {
 
 
 
+
+
+
+
+
+
 /* maha work space */
-.maincontainre{
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (min-width: 112.5em) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* font-family: 'Orbitron', sans-serif; */
+
+/* first style */
+
+/* .maincontainre{
     position: relative;
     width: 100vh;
-    height: 90vh;
+    height: 100vh;
 }
 .nav-icons{
     display: grid;
     grid-template-columns: auto auto auto auto ;
-    position: absolute;
-    top: 43rem;
+    position: fixed;
+    top: 45rem;
     width: 100%;
     height: 10rem;
-    /* background-color: green; */
 
 }
 input[type=checkbox]{
@@ -420,14 +453,12 @@ input[type=checkbox]{
     padding: 1rem 1rem;
     font-size: 5rem;
     color: #097aa5;
-    /* display: inline-block; */
 
 }
 .fa-puzzle-piece{
     padding: 1rem 1rem;
     font-size: 5rem;
     color: #b33a2b;
-    /* display: inline-block; */
 
 }
 .fa-brain{
@@ -441,9 +472,30 @@ input[type=checkbox]{
     color: #b33a2b;
 }
 label>span{
-    /* display: block; */
     padding: 1rem;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
+} */
+
+/*/////////////////////// secound style ////////////////////////////*/
+
+.maincontainre {
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+}
+
+.nav-icons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    position: fixed;
+    top: 45rem;
+    width: 100%;
+    height: 10rem;
+
+}
+
+input[type=checkbox] {
+    display: none;
 }
