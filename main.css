@@ -125,7 +125,6 @@ img {
 .menu ul li a:target {
   border-bottom-color: #1f3d89;
 }
-
 label>img{
   width: 5vw;
   height: 8vh;
@@ -137,6 +136,7 @@ label>img{
     color: #17c0eb;
     border: 2px solid transparent;
 }
+
 /* Logo Toggle */
 .navigation-icon>img {
   width: 28.5rem;
@@ -199,6 +199,7 @@ label>img{
   top: 5rem;
   right: 5rem;
 }
+
 
 
 
@@ -592,3 +593,11 @@ label>img{
     font-family: 'Shadows Into Light', cursive;
     font-family: 'Dancing Script', cursive;
     font-family: 'ZCOOL KuaiLe', cursive;
+
+  */
+  #Dreams:checked +.dreamDiv{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 2;
+  }
