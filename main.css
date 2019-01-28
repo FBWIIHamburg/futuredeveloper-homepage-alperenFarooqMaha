@@ -138,7 +138,7 @@ label>img{
 }
 
 /* Logo Toggle */
-.navigation-icon>img {
+.cycle-icon>img {
   width: 28.5rem;
   height: 11.25rem;
   position: absolute;
@@ -146,11 +146,11 @@ label>img{
   right: -13rem;
 }
 
-.navigation-icon {
+.cycle-icon {
   position: relative;
 }
 
-.navigation-button {
+.cycle-button {
   position: fixed;
   height: 40rem;
   width: 40rem;
@@ -165,7 +165,7 @@ label>img{
   transform: translate(-50%, -50%);
 }
 
-.navigation-background {
+.cycle-backgroundd {
   height: 40rem;
   width: 40rem;
   border-radius: 50%;
@@ -178,14 +178,14 @@ label>img{
   transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-.navigation-checkbox {
+.cycle-checkbox {
   display: none;
 }
 
-.navigation-checkbox:checked~.navigation-background {
+.cycle-checkbox:checked~.cycle-backgroundd {
   transform: scale(80);
 }
-.navigation-checkbox:checked~.navigation-button{
+.cycle-checkbox:checked~.cycle-button{
   position: fixed;
   height: 5rem;
   width:5rem;
