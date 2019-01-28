@@ -1,22 +1,67 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>DCI - Digital Career Institute</title>
+    <title>Toggle Menu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi|Dancing+Script|Indie+Flower|Lobster|Major+Mono+Display|Pacifico|Shadows+Into+Light|ZCOOL+KuaiLe" rel="stylesheet">     
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 
 <body>
-    <!-- alperen work space -->
-    <div class="mainContainer">
-        <img src="./images/apple-apple-devices-business-205316.jpg" alt="desktop">
+    <img src="./images/dark-landscape-mountain-169789.jpg" alt="">
+
+    <!-- Toggle Menu -->
+    <div class="navigation-menu">
+        <input type='checkbox' id='mmeennuu'>
+        <label class='menu' for='mmeennuu'>
+
+            <div class='barry'>
+                <span class='bar'></span>
+                <span class='bar'></span>
+                <span class='bar'></span>
+                <span class='bar'></span>
+            </div>
+
+            <ul>
+                <li><label for="Dreams">
+                  <i class="fa fa-folder"></i>
+                  <span class="dreams">Dreams</span>
+              </label></li>
+                <li>  <label for="Inspire">
+                  <i class="fa fa-folder"></i>
+                  <span class="inspire">Inspire</span>
+              </label></li>
+                <li>
+                  <label for="Harmony">
+                      <i class="fa fa-folder"></i>
+                      <span class="harmony">Harmony</span>
+                  </label></li>
+                <li>         <label for="Harmony">
+                  <i class="fa fa-folder"></i>
+                  <span class="harmony">Harmony</span>
+              </label></li>
+              <li></li>
+            </ul>
+
+        </label>
     </div>
 
-    <div class="logoDiv"><img id="logo" src="./images/cropped-Logo_blue.png" alt=""></div>
+    <!-- Logo Toggle -->
+
+    <div class="navigation">
+        <input type="checkbox" id="navi-toggle" class="navigation-checkbox">
+        <label for="navi-toggle" class="navigation-button">
+            <span class="navigation-icon"><img src="./images/cropped-Logo_blue.png" alt=""></span>
+        </label>
+        <div class="navigation-background"></div>
+    </div>
+
 
 
 
@@ -198,518 +243,6 @@
  
     <!-- maha work space -->
 
-    <!-- first style -->
 
-    <!-- <div class="nav-icons">
-        <div class="icon">
-            <input type="checkbox" name="Dreams" id="Dreams">
-            <label for="Dreams"><i class="fa fa-puzzle-piece"></i>
-                <span>Dreams</span>
-            </label>
-        </div>
-        <div class="icon">
-            <input type="checkbox" name="Inspire" id="Inspire">
-            <label for="Inspire"><i class="fa fa-brain"></i>
-                <span>Inspire</span>
-            </label>
-        </div>
-        <div class="icon">
-            <input type="checkbox" name="courage" id="courage">
-            <label for="courage"><i class="fa fa-code"></i>
-                <span>courage</span>
-            </label>
-        </div>
-        <div class="icon">
-            <input type="checkbox" name="Harmony" id="Harmony">
-            <label for="Harmony"><i class="fa fa-users"></i>
-                <span>Harmony</span>
-            </label>
-        </div>
-    </div> -->
-
-    <!----------------------- secound style ----------------------------->
-<!-- 
-    <div class="nav-icons">
-
-        <div class="icon">
-            <input type="checkbox" name="Dreams" id="Dreams">
-            <label for="Dreams">
-                <span class="dreams">Dreams</span>
-            </label>
-        </div>
-
-        <div class="icon">
-            <input type="checkbox" name="Inspire" id="Inspire">
-            <label for="Inspire">
-                <span class="inspire">Inspire</span>
-            </label>
-        </div>
-
-        <div class="icon">
-            <input type="checkbox" name="courage" id="courage">
-            <label for="courage">
-                <span class="courage">Courage</span>
-            </label>
-        </div>
-
-        <div class="icon">
-            <input type="checkbox" name="Harmony" id="Harmony">
-            <label for="Harmony">
-                <span class="harmony">Harmony</span>
-            </label>
-        </div>
-
-    </div> --> 
- 
-<!----------------------- Third style ----------------------------->
-
-<div class="nav-icons">
-
-        <div class="icon">
-            <input type="checkbox" name="Dreams" id="Dreams">
-            <label for="Dreams">
-                <i class="fa fa-folder"></i>
-                <span class="dreams">Dreams</span>
-            </label>
-        </div>
-
-        <div class="icon">
-            <input type="checkbox" name="Inspire" id="Inspire">
-            <label for="Inspire">
-                <i class="fa fa-folder"></i>
-                <span class="inspire">Inspire</span>
-            </label>
-        </div>
-
-        <div class="icon">
-            <input type="checkbox" name="courage" id="courage">
-            <label for="courage">
-                <i class="fa fa-folder"></i>
-                <span class="courage">Courage</span>
-            </label>
-        </div>
-
-        <div class="icon">
-            <input type="checkbox" name="Harmony" id="Harmony">
-            <label for="Harmony">
-                <i class="fa fa-folder"></i>
-                <span class="harmony">Harmony</span>
-            </label>
-        </div>
-
-        <div class="icon">
-          <input type="checkbox" name="code" id="code">
-          <label for="code">
-              <img src="https://image.noelshack.com/fichiers/2018/22/1/1527510180-visual-studio-code-0-10-1-icon2.png" alt="">
-              <span class="harmony">Visual Studio Code</span>
-          </label>
-      </div>
-
-    </div>
-
-<!----------------------- Forth style ----------------------------->
-<!-- 
-<div class="nav-icons">
-
-        <div class="icon">
-                <div class='diamond intro'>
-                        <div class='diamond__base'>
-                          <div class='diamond-bottom'>
-                            <div class='diamond-slice diamond-slice--0'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--1'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--2'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--3'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--4'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--5'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--6'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--7'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <a class='button' onclick="document.getElementsByClassName('diamond')[0].classList.toggle('intro')">
-                        Dreams
-                      </a>
-        </div>
-
-        <div class="icon">
-                <div class='diamond intro'>
-                        <div class='diamond__base'>
-                          <div class='diamond-bottom'>
-                            <div class='diamond-slice diamond-slice--0'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--1'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--2'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--3'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--4'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--5'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--6'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--7'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <a class='button' onclick="document.getElementsByClassName('diamond')[0].classList.toggle('intro')">
-                        Inspire
-                      </a>
-        </div>
-
-        <div class="icon">
-            
-                <div class='diamond intro'>
-                        <div class='diamond__base'>
-                          <div class='diamond-bottom'>
-                            <div class='diamond-slice diamond-slice--0'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--1'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--2'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--3'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--4'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--5'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--6'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--7'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <a class='button' onclick="document.getElementsByClassName('diamond')[0].classList.toggle('intro')">
-                        Courage
-                      </a>
-        </div>
-
-        <div class="icon">
-                <div class='diamond intro'>
-                        <div class='diamond__base'>
-                          <div class='diamond-bottom'>
-                            <div class='diamond-slice diamond-slice--0'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--1'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--2'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--3'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--4'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--5'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--6'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class='diamond-slice diamond-slice--7'>
-                              <div class='diamond-slice-a'>
-                                <div class='pavilion'>
-                                  <div class='pavilion__face'></div>
-                                </div>
-                                <div class='diamond-slice-b'>
-                                  <div class='facet'></div>
-                                  <div class='top'></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <a class='button' onclick="document.getElementsByClassName('diamond')[0].classList.toggle('intro')">
-                            Harmony
-                      </a>
-        </div>
-
-    </div> -->
+  </body>
+</html>
