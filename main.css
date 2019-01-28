@@ -1,9 +1,16 @@
-/* alperen work space */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Bitter', serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #000;
 }
 
 img {
@@ -11,452 +18,172 @@ img {
     height: 100vh;
 }
 
-.logoDiv{
-    position: relative;
+/* Toggle Menu */
+
+.navigation-menu {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
-#logo{
-    width: 378px;
-    height: 150px;
-    position: absolute;
-    top: -70vh;
-    left: 35vw;
-    /* transform: translate(-50%, -50%); */
+#mmeennuu {
+    display: none;
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* farooq work space */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* maha work space */
-.maincontainre{
-    position: relative;
-    width: 100vh;
-    height: 90vh;
-}
-.nav-icons{
-    display: grid;
-    grid-template-columns: auto auto auto auto ;
-    position: absolute;
-    top: 43rem;
-    width: 100%;
+#mmeennuu:checked~.menu {
+    width: 65rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: 0.3rem solid #4296fa;
     height: 10rem;
-    /* background-color: green; */
-
 }
-input[type=checkbox]{
+
+#mmeennuu:checked~.menu>ul {
+    display: block;
+    opacity: 1;
+}
+
+#mmeennuu:checked~.menu>.barry {
     display: none;
 }
-.fa-code{
-    padding: 1rem 1rem;
-    font-size: 5rem;
-    color: #097aa5;
-    /* display: inline-block; */
 
+.menu {
+    display: block;
+    margin: 3rem auto;
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(0, 122, 255, 0.8);
+    border: 0.3rem solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
 }
-.fa-puzzle-piece{
-    padding: 1rem 1rem;
-    font-size: 5rem;
-    color: #b33a2b;
-    /* display: inline-block; */
 
+.menu div.barry {
+    width: 4rem;
+    margin: 3.5rem auto;
 }
-.fa-brain{
-    padding: 1rem 1rem;
-    font-size: 5rem;
-    color: #3b5998;
+
+.menu div.barry .bar {
+    display: block;
+    width: 100%;
+    height: 0.5rem;
+    margin-top: 0.3rem;
+    border-radius: 0.2rem;
+    background-color: #fff;
 }
-.fa-users{
-    padding: 1rem 1rem;
-    font-size: 5rem;
-    color: #b33a2b;
+
+.menu ul {
+    opacity: 0;
+    display: none;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    list-style-type: none;
+    padding: 0;
+    width: 65rem;
+    text-align: center;
+    margin-bottom: 0;
 }
-label>span{
-    /* display: block; */
-    padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
+
+.menu ul li {
+    display: inline-block;
 }
+
+.menu ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    color: #fff;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    border: 0.3rem solid transparent;
+    border-radius: 0.5rem;
+}
+
+.menu ul li a:hover {
+    border-color: transparent;
+}
+
+.menu ul li a:target {
+    border-bottom-color: #1f3d89;
+}
+
+
+/* Logo Toggle */
+.navigation-icon>img {
+    width: 28.5rem;
+    height: 11.25rem;
+    position: absolute;
+    top: 13rem;
+    right: -13rem;
+}
+
+.navigation-icon {
+    position: relative;
+}
+
+.navigation-button {
+    position: fixed;
+    height: 40rem;
+    width: 40rem;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.65);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation-background {
+    height: 40rem;
+    width: 40rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(#fff, #fff);
+    z-index: 1;
+    transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navigation-checkbox {
+    display: none;
+}
+
+.navigation-checkbox:checked~.navigation-background {
+    transform: scale(80);
+}
+.navigation-checkbox:checked~.navigation-button{
+    position: fixed;
+    height: 5rem;
+    width:5rem;
+    z-index: 2;
+    background-image: url(./images/Screenshot\ 2019-01-28\ 00.43.46.png);
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.65);
+    top: 5rem;
+    right: 5rem;
+}
+
