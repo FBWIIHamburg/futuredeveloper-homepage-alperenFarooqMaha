@@ -103,7 +103,7 @@ img {
   display: inline-block;
 }
 
-.menu ul li a {
+/* .menu ul li a {
   text-decoration: none;
   display: inline-block;
   padding: 1.5rem 2.5rem;
@@ -116,7 +116,7 @@ img {
   -ms-transition: all 0.3s ease-in-out;
   border: 0.3rem solid transparent;
   border-radius: 0.5rem;
-}
+} */
 
 .menu ul li a:hover {
   border-color: transparent;
@@ -595,6 +595,7 @@ label>img{
     font-family: 'ZCOOL KuaiLe', cursive;
 
   */
+  
   #Dreams:checked +.dreamDiv{
     width: 100vw;
     height: 100vh;
