@@ -182,7 +182,7 @@ opacity: 0;
   transform: translate(-50%, -50%);
 }
 
-.cycle-backgroundd {
+.cycle-background {
   height: 40rem;
   width: 40rem;
   border-radius: 50%;
@@ -199,7 +199,7 @@ input[type=checkbox] {
   display: none;
 } 
 
-.cycle-checkbox:checked~.cycle-backgroundd {
+.cycle-checkbox:checked~.cycle-background {
   transform: scale(80);
 }
 .cycle-checkbox:checked~.cycle-button{
