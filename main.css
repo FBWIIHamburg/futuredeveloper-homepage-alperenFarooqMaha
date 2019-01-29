@@ -1,6 +1,3 @@
-/* alperen work space */
-
-
 * {
   margin: 0;
   padding: 0;
@@ -12,11 +9,9 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  background-color: #000;
-}
+/* Background */
 
-img {
+#background {
   width: 100vw;
   height: 100vh;
 }
@@ -118,27 +113,143 @@ img {
   border-radius: 0.5rem;
 }
 
-.menu ul li a:hover {
-  border-color: transparent;
-}
-
-.menu ul li a:target {
-  border-bottom-color: #1f3d89;
-}
-label>img{
-  width: 5vw;
-  height: 8vh;
-  margin: auto;
-  border: 2px solid transparent;
-}
 .fa-folder{
     font-size: 7rem;
     color: #17c0eb;
     border: 2px solid transparent;
 }
 
-/* Logo Toggle */
-.cycle-icon>img {
+/* Logo */
+
+#logo {
+  width: 28.5rem;
+  height: 11.25rem;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+}
+
+/* Buttons and Pages */
+
+input[type=radio]{
+  display: none;
+}
+
+/* Dream Page */
+
+.dreamPage{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+#dream:checked + .dreamPage {
+  display: block;
+  width: 80vw;
+  height: 80vh;
+  top: 0;
+  left: 10vw;
+  background-color: #fff;
+  border: 1.5rem solid #000;
+  border-radius: 1rem;
+  z-index: 1000;
+}
+
+/* Inspire Page */
+
+.inspirePage{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+#inspire:checked + .inspirePage {
+  display: block;
+  width: 80vw;
+  height: 80vh;
+  top: 0;
+  left: 10vw;
+  background-color: #fff;
+  border: 1.5rem solid #000;
+  border-radius: 1rem;
+  z-index: 1000;
+}
+
+/* Courage Page */
+
+.couragePage{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+#courage:checked + .couragePage {
+  display: block;
+  width: 80vw;
+  height: 80vh;
+  top: 0;
+  left: 10vw;
+  background-color: #fff;
+  border: 1.5rem solid #000;
+  border-radius: 1rem;
+  z-index: 1000;
+}
+
+/* Harmony Page */
+
+.harmonyPage{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+#harmony:checked + .harmonyPage {
+  display: block;
+  width: 80vw;
+  height: 80vh;
+  top: 0;
+  left: 10vw;
+  background-color: #fff;
+  border: 1.5rem solid #000;
+  border-radius: 1rem;
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Logo Toggle
+  .cycle-icon>img {
   width: 28.5rem;
   height: 11.25rem;
   position: absolute;
@@ -198,11 +309,7 @@ label>img{
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.65);
   top: 5rem;
   right: 5rem;
-}
-
-
-
-
+} */
 
 
 
