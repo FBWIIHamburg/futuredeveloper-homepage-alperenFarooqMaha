@@ -126,21 +126,21 @@ body{
 
 /* Logo */
 
-/* #dci-logo {
+#dci-logo {
   width: 28.5rem;
   height: 11.25rem;
   position: fixed;
   top: 24%;
   left: 31.3%;
-} */
+}
 
-#logo {
+/* #logo {
   width: 35vw;
   height: 30vh;
   position: fixed;
   top: 24%;
   left: 31.65%;
-}
+} */
 
 /* Buttons and Pages */
 
