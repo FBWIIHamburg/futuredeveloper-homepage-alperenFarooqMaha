@@ -35,8 +35,9 @@ html {
   width: 65rem;
   border-radius: 0.5rem;
   background-color: transparent;
-  border: 0.3rem solid #4296fa;
+  border: 0.4rem solid #4296fa;
   height: 10rem;
+  background-color: #000;
 }
 
 #mmeennuu:checked~.menu>ul {
@@ -47,6 +48,11 @@ html {
 #mmeennuu:checked~.menu>.barry {
   display: none;
 }
+
+#mmeennuu:checked::none {
+  
+}
+
 
 .menu {
   display: block;
@@ -98,19 +104,15 @@ html {
   display: inline-block;
 }
 
-.menu ul li a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 1.5rem 2.5rem;
-  color: #fff;
-  font-size: 2rem;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  border: 0.3rem solid transparent;
-  border-radius: 0.5rem;
+.menu ul li p {
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  color: #2ac0e9; 
+}
+
+.fa{
+  padding-right: 3.5rem;
+  padding-left: 3.5rem;
 }
 
 .fa-folder{
@@ -121,13 +123,20 @@ html {
 
 /* Logo */
 
-#logo {
+#dci-logo {
   width: 28.5rem;
   height: 11.25rem;
   position: fixed;
-  top: 30%;
-  left: 40%;
+  top: 24%;
+  left: 31.3%;
 }
+/* #logo {
+  width: 35vw;
+  height: 30vh;
+  position: fixed;
+  top: 24%;
+  left: 31.3%;
+} */
 
 /* Buttons and Pages */
 
@@ -135,14 +144,40 @@ input[type=radio]{
   display: none;
 }
 
+.close-button label {
+    position: fixed;
+    top: 3vh;
+    right: 3vw;
+    cursor: pointer;
+}
+
 /* Dream Page */
 
-.dreamPage{
+.dreamPage {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
+}
 
+.dreamPage:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.05;
+  background-image: url('./images/future_developers.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 #dream:checked + .dreamPage {
@@ -159,12 +194,32 @@ input[type=radio]{
 
 /* Inspire Page */
 
-.inspirePage{
+.inspirePage {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
 
+}
+
+.inspirePage:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.05;
+  background-image: url('./images/future_developers.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 #inspire:checked + .inspirePage {
@@ -181,12 +236,32 @@ input[type=radio]{
 
 /* Courage Page */
 
-.couragePage{
+.couragePage {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
 
+}
+
+.couragePage:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.05;
+  background-image: url('./images/future_developers.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 #courage:checked + .couragePage {
@@ -203,12 +278,32 @@ input[type=radio]{
 
 /* Harmony Page */
 
-.harmonyPage{
+.harmonyPage {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
 
+}
+
+.harmonyPage:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.05;
+  background-image: url('./images/future_developers.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 #harmony:checked + .harmonyPage {
@@ -247,464 +342,3 @@ input[type=radio]{
 
 
 
-
-/* Logo Toggle
-  .cycle-icon>img {
-  width: 28.5rem;
-  height: 11.25rem;
-  position: absolute;
-  top: 13rem;
-  right: -13rem;
-}
-
-.cycle-icon {
-  position: relative;
-}
-
-.cycle-button {
-  position: fixed;
-  height: 40rem;
-  width: 40rem;
-  z-index: 2;
-  background-color: #fff;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.65);
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.cycle-background {
-  height: 40rem;
-  width: 40rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: radial-gradient(#fff, #fff);
-  z-index: 1;
-  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
-}
-
-.cycle-checkbox {
-  display: none;
-}
-
-.cycle-checkbox:checked~.cycle-background {
-  transform: scale(80);
-}
-.cycle-checkbox:checked~.cycle-button{
-  position: fixed;
-  height: 5rem;
-  width:5rem;
-  z-index: 2;
-  background-image: url(./images/Screenshot\ 2019-01-28\ 00.43.46.png);
-  background-color: #fff;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.65);
-  top: 5rem;
-  right: 5rem;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* farooq work space */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* maha work space */
-
-
-/* fonts////////////
-
-    font-family: 'Major Mono Display', monospace;
-    font-family: 'Baloo Thambi', cursive;
-    font-family: 'Indie Flower', cursive;
-    font-family: 'Lobster', cursive;
-    font-family: 'Pacifico', cursive;
-    font-family: 'Shadows Into Light', cursive;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'ZCOOL KuaiLe', cursive;
-
-  */
-  #Dreams:checked +.dreamDiv{
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    z-index: 2;
-  }
