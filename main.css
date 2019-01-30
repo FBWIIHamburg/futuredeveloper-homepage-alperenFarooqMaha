@@ -9,6 +9,14 @@ html {
   font-size: 62.5%;
 }
 
+/* Fix Body and Background */
+
+body{
+  position: fixed; 
+  overflow-y: scroll;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
 /* Background */
 
 #background {
@@ -131,7 +139,7 @@ html {
   height: 30vh;
   position: fixed;
   top: 24%;
-  left: 31.3%;
+  left: 31.65%;
 }
 
 /* Buttons and Pages */
@@ -148,7 +156,7 @@ input[type=radio] {
   z-index: 3000;
 }
 
-/* Dream Page */
+/* Dream Page Attributes */
 
 .dreamPage {
   display: none;
@@ -191,7 +199,7 @@ input[type=radio] {
   z-index: 1000;
 }
 
-/* Inspire Page */
+/* Inspire Page Attributes*/
 
 .inspirePage {
   display: none;
@@ -234,7 +242,7 @@ input[type=radio] {
   z-index: 1000;
 }
 
-/* Courage Page */
+/* Courage Page Attributes */
 
 .couragePage {
   display: none;
@@ -277,7 +285,7 @@ input[type=radio] {
   z-index: 1000;
 }
 
-/* Harmony Page */
+/* Harmony Page Attributes */
 
 .harmonyPage {
   display: none;
