@@ -149,6 +149,7 @@ input[type=radio]{
     top: 3vh;
     right: 3vw;
     cursor: pointer;
+    z-index: 3000;
 }
 
 /* Dream Page */
@@ -156,8 +157,10 @@ input[type=radio]{
 .dreamPage {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 40%;
+  left: 40%;
+  animation-duration: 1s;
+  animation-name: createBox;
 }
 
 .dreamPage:after {
@@ -197,9 +200,10 @@ input[type=radio]{
 .inspirePage {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-
+  top: 40%;
+  left: 40%;
+  animation-duration: 1s;
+  animation-name: createBox;
 }
 
 .inspirePage:after {
@@ -239,9 +243,10 @@ input[type=radio]{
 .couragePage {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-
+  top: 40%;
+  left: 40%;
+  animation-duration: 1s;
+  animation-name: createBox;
 }
 
 .couragePage:after {
@@ -281,9 +286,10 @@ input[type=radio]{
 .harmonyPage {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-
+  top: 40%;
+  left: 40%;
+  animation-duration: 1s;
+  animation-name: createBox;
 }
 
 .harmonyPage:after {
@@ -317,6 +323,26 @@ input[type=radio]{
   border-radius: 1rem;
   z-index: 1000;
 }
+
+/* Page Animation */
+
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* @keyframes closeBox {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+} */
 
 
 
