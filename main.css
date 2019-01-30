@@ -49,9 +49,6 @@ html {
   display: none;
 }
 
-#mmeennuu:checked::none {}
-
-
 .menu {
   display: block;
   margin: 3rem auto;
