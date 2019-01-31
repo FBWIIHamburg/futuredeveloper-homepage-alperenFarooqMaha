@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -10,18 +9,13 @@ html {
   font-size: 62.5%;
 }
 
-
 /* Fix Body and Background */
 
-body {
-  position: fixed;
+body{
+  position: fixed; 
   overflow-y: scroll;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 0; right: 0; bottom: 0; left: 0;
 }
-
 
 /* Background */
 
@@ -29,7 +23,6 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
 
 /* Toggle Menu */
 
@@ -47,12 +40,13 @@ body {
 }
 
 #mmeennuu:checked~.menu {
-  width: 65rem;
+  padding-left: 4rem;
+  width: 75rem;
   border-radius: 0.5rem;
   background-color: transparent;
-  border: 0.4rem solid #4296fa;
+  border: 0.4rem solid #000000a2;
   height: 10rem;
-  background-color: #000;
+  background-color: rgba(177, 177, 177, 0.219);
 }
 
 #mmeennuu:checked~.menu>ul {
@@ -69,7 +63,7 @@ body {
   margin: 3rem auto;
   width: 10rem;
   height: 10rem;
-  background-color: rgba(0, 122, 255, 0.8);
+  background-color: rgba(88, 88, 88, 0.404);
   border: 0.3rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
@@ -131,26 +125,15 @@ body {
   border: 2px solid transparent;
 }
 
-
 /* Logo */
 
-#dci-logo {
-  width: 28.5rem;
-  height: 11.25rem;
+#our-logo {
+  width: 40rem;
+  height: 25rem;
   position: fixed;
-  top: 24%;
-  left: 31.3%;
+  top: 25%;
+  left: 38.5%;
 }
-
-
-/* #logo {
-  width: 35vw;
-  height: 30vh;
-  position: fixed;
-  top: 24%;
-  left: 31.65%;
-} */
-
 
 /* Buttons and Pages */
 
@@ -165,7 +148,6 @@ input[type=radio] {
   cursor: pointer;
   z-index: 3000;
 }
-
 
 /* Dream Page Attributes */
 
@@ -210,7 +192,6 @@ input[type=radio] {
   z-index: 1000;
 }
 
-
 /* Inspire Page Attributes*/
 
 .inspirePage {
@@ -254,7 +235,6 @@ input[type=radio] {
   z-index: 1000;
 }
 
-
 /* Courage Page Attributes */
 
 .couragePage {
@@ -264,9 +244,10 @@ input[type=radio] {
   left: 40%;
   animation-duration: 1s;
   animation-name: createBox;
+  z-index: 1;
 }
 
-.couragePage:after {
+/* .couragePage:after {
   content: ' ';
   display: block;
   position: absolute;
@@ -284,7 +265,7 @@ input[type=radio] {
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-}
+} */
 
 #courage:checked+.couragePage {
   display: block;
@@ -298,7 +279,66 @@ input[type=radio] {
   z-index: 1000;
 }
 
+.techContainer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.myVideo{
+  position: sticky;
+  height: 100%;
+  width: 105%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.3;
+}
 
+.title-text{
+  position: absolute;
+  top: 0;
+  left: 35%;
+  font-size: 9rem;
+  font-weight: 300;
+  font-family: 'Lobster', cursive;
+  color: black;
+  display: block;
+  text-shadow:
+  3px 3px 0 rgb(131, 131, 131),
+-1px -1px 0 rgb(131, 131, 131),  
+ 1px -1px 0 rgb(131, 131, 131),
+ -1px 1px 0 rgb(131, 131, 131),
+  1px 1px 0 rgb(131, 131, 131);
+  animation-name: moveLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  z-index: 2;
+}
+.linecouarg{
+  position: absolute;
+  top: 15%;
+  left: 43%;
+  background-color: #000;
+  width: 15%;
+  height: 0.5rem;
+  z-index: 2;
+  margin: auto;
+  margin-bottom: 3rem;
+  transition-property: all;
+  transition-duration: 0.8s;
+  transition-timing-function: linear;
+}
+.title-text:hover +.linecouarg{
+  width: 32%;
+  left: 34%;
+
+  box-shadow:
+  3px 3px 0 rgb(131, 131, 131),
+-1px -1px 0 rgb(131, 131, 131),  
+ 1px -1px 0 rgb(131, 131, 131),
+ -1px 1px 0 rgb(131, 131, 131),
+  1px 1px 0 rgb(131, 131, 131);
+}
 /* Harmony Page Attributes */
 
 .harmonyPage {
@@ -340,10 +380,7 @@ input[type=radio] {
   border: 1.5rem solid #000;
   border-radius: 1rem;
   z-index: 1000;
-  overflow: hidden;
-  overflow: scroll;
 }
-
 
 /* Page Animation */
 
@@ -357,75 +394,86 @@ input[type=radio] {
   }
 }
 
+
 /* Smoke Code */
 
 @keyframes smoke1 {
   0% {
-      transform: scale(0.2);
-      opacity: 0;
+    transform: scale(0.2);
+    opacity: 0;
   }
+
   10% {
-      opacity: 1;
+    opacity: 1;
   }
+
   100% {
-      transform: scale(3) translate(-4px, -47px);
-      opacity: 0;
+    transform: scale(3) translate(-4px, -47px);
+    opacity: 0;
   }
 }
 
 @keyframes smoke2 {
   0% {
-      transform: scale(0.2);
-      opacity: 0;
+    transform: scale(0.2);
+    opacity: 0;
   }
+
   10% {
-      opacity: 1;
+    opacity: 1;
   }
+
   100% {
-      transform: scale(3) translate(-7px, -49px);
-      opacity: 0;
+    transform: scale(3) translate(-7px, -49px);
+    opacity: 0;
   }
 }
 
 @keyframes smoke3 {
   0% {
-      transform: scale(0.2);
-      opacity: 0;
+    transform: scale(0.2);
+    opacity: 0;
   }
+
   10% {
-      opacity: 1;
+    opacity: 1;
   }
+
   100% {
-      transform: scale(3) translate(3px, -33px);
-      opacity: 0;
+    transform: scale(3) translate(3px, -33px);
+    opacity: 0;
   }
 }
 
 @keyframes smoke4 {
   0% {
-      transform: scale(0.2);
-      opacity: 0;
+    transform: scale(0.2);
+    opacity: 0;
   }
+
   10% {
-      opacity: 1;
+    opacity: 1;
   }
+
   100% {
-      transform: scale(3) translate(-4px, -50px);
-      opacity: 0;
+    transform: scale(3) translate(-4px, -50px);
+    opacity: 0;
   }
 }
 
 @keyframes smoke5 {
   0% {
-      transform: scale(0.2);
-      opacity: 0;
+    transform: scale(0.2);
+    opacity: 0;
   }
+
   10% {
-      opacity: 1;
+    opacity: 1;
   }
+
   100% {
-      transform: scale(3) translate(-1px, -36px);
-      opacity: 0;
+    transform: scale(3) translate(-1px, -36px);
+    opacity: 0;
   }
 }
 
@@ -433,8 +481,8 @@ input[type=radio] {
   width: 10rem;
   height: 20rem;
   position: absolute;
-  top: 30%;
-  left: 70.8%;
+  top: 25%;
+  left: 70%;
 }
 
 .smoke {
@@ -607,333 +655,4 @@ input[type=radio] {
   animation-timing-function: ease-out;
   animation-delay: 8s;
   animation-iteration-count: infinite;
-}
-
-
-/* contact style css */
-
-@import url('https://fonts.googleapis.com/css?family=Chivo:400,700,900');
-
-/* INITIALIZE */
-
-body {
-  font-size: 20px;
-  /* background-color: rgb(117, 202, 202); */
-}
-
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-family: 'Chivo', sans-serif;
-  font-size: 2em;
-  color: #4296fa;
-  font-weight: 900;
-  letter-spacing: .5em;
-  padding-left: 25px;
-}
-
-.menu {
-  width: 33.3%;
-  height: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: 1s;
-}
-
-h2 {
-  margin-top: 20px;
-  padding: 10px;
-  font-family: 'Chivo', sans-serif;
-  font-weight: 700;
-  color: black;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.sectionHeader {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-
-/* ABOUT SECTION */
-
-.aboutSection {
-  max-width: 900px;
-  margin: 0 auto;
-  overflow: hidden;
-  background: white;
-  border-right: 2px solid #4296fa;
-  position: relative;
-  height: 274.38px;
-}
-
-
-/* PHOTO CONTAINER */
-
-.myFace-container {
-  width: 20%;
-  overflow: hidden;
-  margin: 5%;
-  float: left;
-  height: 100%;
-}
-
-.aboutSection img {
-  width: 100%;
-  border-radius: 50%;
-  padding: 10px;
-  border: 2px solid #4296fa;
-}
-
-
-/* ABOUT TEXT - PARAGRAPHS*/
-
-.aboutSection .about-p-container p {
-  font-family: 'Chivo', sans-serif;
-  font-size: .9em;
-}
-
-.par1,
-.par2 {
-  height: 50%;
-  display: flex;
-  align-items: center;
-}
-
-.par1 {
-  border-bottom: 2px solid #4296fa;
-}
-
-.about-p-container {
-  width: 70%;
-  overflow: hidden;
-  float: right;
-  height: 100%;
-  position: relative;
-}
-
-
-/* SECTION HEADER || PORTFOLIO*/
-
-.portfolioHeader {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.portfolioHeader h2 {
-  padding: 30px;
-  font-family: 'Chivo', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-/* PORTFOLIO SECTION */
-
-.demoSnaps {
-  max-width: 900px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0;
-  background: white;
-  border-right: 2px solid #4296fa;
-}
-
-.snaps-row1,
-.snaps-row2,
-.snaps-row3 {
-  width: 96%;
-  overflow: hidden;
-  border-right: 2px solid #4296fa;
-  background: rgba(35, 27, 21, .4);
-  margin: 2%;
-}
-
-.snaps-row1 img,
-.snaps-row2 img,
-.snaps-row3 img {
-  width: 40%;
-  float: left;
-  margin: 5% 5%;
-}
-
-
-/* SECTION HEADER || CONTACT*/
-
-.contactHeader h2 {
-  padding: 30px;
-  font-family: 'Chivo', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-/* CONTACT SECTION */
-
-.contact-container {
-  max-width: 900px;
-  margin: 0 auto;
-  background: white;
-  position: relative;
-  overflow: hidden;
-  border-right: 2px solid #4296fa;
-}
-
-
-/* CONTACT SECTION || FORM*/
-
-
-/* Code based on CHRIS COYIER "Float Labels with CSS" https://css-tricks.com/float-labels-css/*/
-
-.contact-form-container {
-  width: 50%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  float: left;
-}
-
-form {
-  width: 80%;
-  float: left;
-  margin: 20px;
-  font-family: 'Chivo', sans-serif;
-}
-
-form>div {
-  position: relative;
-  margin: 20px 0;
-}
-
-form>div>label {
-  position: absolute;
-}
-
-.contact-form-container input,
-.contact-form-container textarea {
-  width: 100%;
-  border: 2px solid gray;
-  background: none;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  padding: 8px 12px;
-  outline: 0;
-}
-
-form input:valid,
-form textarea:valid {
-  background: white;
-}
-
-form input:focus,
-form textarea:focus {
-  border-color: #4296fa;
-}
-
-form input:focus+label,
-form textarea:focus+label {
-  background: #4296fa;
-  color: white;
-  font-size: 70%;
-  padding: 1px 6px;
-  z-index: 2;
-  text-transform: uppercase;
-}
-
-form label {
-  transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
-  position: absolute;
-  color: #999;
-  padding: 7px 6px;
-}
-
-form textarea {
-  display: block;
-  resize: vertical;
-}
-
-form label {
-  top: 0px;
-  right: 100%;
-  width: 100%;
-  margin-right: -100%;
-  bottom: 2px;
-  display: flex;
-  align-items: center;
-}
-
-form input:focus+label,
-form textarea:focus+label {
-  right: 0;
-  margin-right: 0;
-  width: 40%;
-  padding-top: 5px;
-}
-
-
-/* CONTACT SECTION || TEXT*/
-
-.contact-text-container {
-  width: 50%;
-  float: left;
-  font-family: 'Chivo', sans-serif;
-  font-size: .9em;
-}
-
-.contact-text-par1,
-.contact-text-par2 {
-  padding: 35px;
-  margin-left: 35px;
-  padding-left: 0;
-}
-
-.contact-text-par1 {
-  border-bottom: 2px solid #4296fa;
-}
-
-
-/* FOOTER*/
-
-footer {
-  width: 100%;
-  height: 70px;
-  background: #b8cae03b;
-  margin-top: 35px;
-  overflow: hidden;
-}
-
-footer div {
-  width: 50%;
-  float: left;
-}
-
-
-/* FOOTER || COPYTEXT */
-
-.copyText {
-  height: 70px;
-  display: flex;
-  align-items: center;
-  color: black;
-  font-family: 'Chivo', sans-serif;
-  padding-left: 19%;
-}
-
-@media only screen and (max-width: 687px) {
-  .nav-container-menu {
-      width: 65%;
-  }
 }
