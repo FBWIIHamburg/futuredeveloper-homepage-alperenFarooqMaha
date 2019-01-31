@@ -11,13 +11,188 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./contact/contact..css" /> -->
 </head>
 
 <body>
 
-    <!-- smoke -->
-    <div id="background">
+    <img id="background" src="./images/apple-apple-devices-business-205316.jpg" alt="">
 
+    <!-- Toggle Menu -->
+    <div class="navigation-menu">
+        <input type='checkbox' id='mmeennuu'>
+        <label class='menu' for='mmeennuu'>
+
+            <div class='barry'>
+                <span class='bar'></span>
+                <span class='bar'></span>
+                <span class='bar'></span>
+                <span class='bar'></span>
+            </div>
+            <ul>
+                <!-- Dream Button -->
+                <li>
+                    <label for="dream">
+                        <i class="fa fa-folder"></i>
+                        <p>Dream</p>
+                    </label>
+        </li>
+        <!-- Inspire Button -->
+        <li>
+            <label for="inspire">
+                        <i class="fa fa-folder"></i>
+                        <p>Inspire</p>
+
+                    </label>
+        </li>
+        <!-- Courage Button -->
+        <li>
+            <label for="courage">
+                        <i class="fa fa-folder"></i>
+                        <p>Courage</p>
+                    </label>
+        </li>
+        <!-- Harmony Button-->
+        <li>
+            <label for="harmony">
+                        <i class="fa fa-folder"></i>
+                        <p>Contact Us</p>
+                    </label>
+        </li>
+        </ul>
+        </label>
+    </div>
+
+    <!-- Pages Radio Buttons and Content-->
+    <input type="radio" id="dream" name="button" value="dream">
+    <div class="dreamPage">
+        <h1>What Were We Dreaming?</h1>
+    </div>
+
+    <input type="radio" id="inspire" name="button" value="inspire">
+    <div class="inspirePage">
+        <h1>What Inspired Us?</h1>
+    </div>
+
+    <input type="radio" id="courage" name="button" value="courage">
+    <div class="couragePage">
+        <h1>What Encouraged Us?</h1>
+    </div>
+
+    <input type="radio" id="harmony" name="button" value="harmony">
+    <div class="harmonyPage">
+
+        <!-- contact content -->
+        <div class="contactInfo">
+            </nav>
+            <div class="sectionHeader" id="aboutTarget">
+                <h2>One of my most productive days was throwing away 1000 lines of code. </h2>
+            </div>
+            <div class="aboutSection">
+                <div class="myFace-container">
+                    <img class="myFace" src="./images/maha.jpg" alt="my pretty face"></div>
+                <div class="about-p-container">
+                    <div class="par1">
+                        <p>Web developer in the making. Learning to code in HTML // CSS // JavaScript. Interested in interactivity and functionality of UX.</p>
+                    </div>
+                    <div class="par2">
+                        <p>Web Developer // Front - End // Back - End</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionHeader" id="aboutTarget">
+                <!-- <h2>Maha</h2> -->
+            </div>
+            <div class="aboutSection">
+                <div class="myFace-container">
+                    <img class="myFace" src="./images/alperen-özkan-foto.1024x1024.jpg" alt="my pretty face"></div>
+                <div class="about-p-container">
+                    <div class="par1">
+                        <p>Web developer in the making. Learning to code in HTML // CSS // JavaScript. Interested in interactivity and functionality of UX.</p>
+                    </div>
+                    <div class="par2">
+                        <p>Web Developer // Front - End // Back - End</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionHeader" id="aboutTarget">
+            </div>
+
+
+            <div class="aboutSection">
+                <div class="myFace-container">
+                    <img class="myFace" src="./images/fazly.jpg" alt="my pretty face"></div>
+                <div class="about-p-container">
+                    <div class="par1">
+                        <p>Web developer in the making. Learning to code in HTML // CSS // JavaScript. Interested in interactivity and functionality of UX.</p>
+                    </div>
+                    <div class="par2">
+                        <p>Web Developer // Front - End // Back - End</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionHeader" id="aboutTarget">
+            </div>
+
+            <!-- contact box -->
+            <div class="contactHeader" id="contactTarget">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-form-container">
+                    <form>
+                        <div class="form-name-container">
+                            <input type="text" name="name" required id="inputName">
+                            <label for="inputName">Name</label>
+                        </div>
+                        <div class="form-email-container">
+                            <input type="email" name="email" required id="inputEmail">
+                            <label for="inputEmail">E-Mail</label>
+                        </div>
+                        <div class="form-phone-container">
+                            <input type="tel" name="phone" required id="inputPhone">
+                            <label for="inputPhone">Phone Number</label>
+                        </div>
+                        <div class="form-comment-container">
+                            <textarea id="textAreaInput" required></textarea>
+                            <label for="textAreaInput">Thanks for your comments!</label>
+                        </div>
+                        <div>
+                            <input type="submit" name="submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-text-container">
+                    <p class="contact-text-par1">If you want to get in touch with me please don't hesitate to use the form on the left. You can ask anything you want. Besides Web Developing I am also a big music fan, I like to produce electronic music, links to which you can find
+                        in the footer of the page. </p>
+                    <p class="contact-text-par2">Alternatively you can contact us in DCI</p>
+                </div>
+            </div>
+            <footer>
+                <div class="copyText">
+                    <p>Maha,Alpern and farooq &copy; 2019</p>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+    <div class="close-button">
+        <input type="radio" id="main-page" name="button" value="main-page">
+        <label for="main-page">
+            <i class="fas fa-home fa-5x" style="color: #2ac0e9"></i>
+        </label>
+    </div>
+
+
+
+    <!-- Logo -->
+
+    <!-- <img id="logo" src="./images/future_developers.jpg" alt=""> -->
+    <img id="dci-logo" src="./images/cropped-Logo_blue.png" alt="">
+
+    <!-- Smoke Effect -->
+    <div id="background">
 
         <div class="view">
             <div class="smoke-group">
@@ -45,82 +220,6 @@
         </div>
 
     </div>
-    <div class="icon-pack4">
-        <ul>
-            <li><a><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
-            <!-- <li><a><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li> -->
-            <li><a><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
-            <li><a><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
-            <!-- <li><a><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li> -->
-        </ul>
-
-    </div>
-
-
-    <!-- <div class="smoke">
-
-        </div> -->
-    </div>
-    <!-- <img id="background" src="./images/apple-apple-devices-business-205316.jpg" alt=""> -->
-
-    <!-- Toggle Menu -->
-    <div class="navigation-menu">
-        <input type='checkbox' id='mmeennuu'>
-        <label class='menu' for='mmeennuu'>
-
-            <div class='barry'>
-                <span class='bar'></span>
-                <span class='bar'></span>
-                <span class='bar'></span>
-                <span class='bar'></span>
-            </div>
-            <ul>
-                <!-- Dream -->
-                <li>
-                    <label for="dream">Dream
-                        <i class="fa fa-folder"></i>
-                    </label>
-        </li>
-        <!-- Inspire -->
-        <li>
-            <label for="inspire">Inspire
-                        <i class="fa fa-folder"></i>
-                    </label>
-        </li>
-        <!-- Courage -->
-        <li>
-            <label for="courage">Courage
-                        <i class="fa fa-folder"></i>
-                    </label>
-        </li>
-        <!-- Harmony -->
-        <li>
-            <label for="harmony">Harmony
-                        <i class="fa fa-folder"></i>
-                    </label>
-        </li>
-        </ul>
-        </label>
-    </div>
-
-    <!-- Pages -->
-    <input type="radio" id="dream" name="button" value="dream">
-    <div class="dreamPage">Dream Page</div>
-
-    <input type="radio" id="inspire" name="button" value="inspire">
-    <div class="inspirePage">Inspire Page</div>
-
-    <input type="radio" id="courage" name="button" value="courage">
-    <div class="couragePage">Courage Page</div>
-
-    <input type="radio" id="harmony" name="button" value="harmony">
-    <div class="harmonyPage">Harmony Page</div>
-
-
-    <!-- Logo -->
-
-    <img id="logo" src="./images/01.png" alt="">
-
 
 
 

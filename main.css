@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Bitter", serif;
+    font-family: 'Bitter', serif;
 }
 
 html {
@@ -10,14 +10,23 @@ html {
 }
 
 
+/* Fix Body and Background */
+
+body {
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
 /* Background */
 
 #background {
-    background-image: url("./images/apple-apple-devices-business-205316.jpg");
     width: 100vw;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
 }
 
 
@@ -38,8 +47,9 @@ html {
     width: 65rem;
     border-radius: 0.5rem;
     background-color: transparent;
-    border: 0.3rem solid rgb(20, 64, 133);
+    border: 0.4rem solid #4296fa;
     height: 10rem;
+    background-color: #000;
 }
 
 #mmeennuu:checked~.menu>ul {
@@ -56,7 +66,7 @@ html {
     margin: 3rem auto;
     width: 10rem;
     height: 10rem;
-    background-color: rgb(20, 64, 133);
+    background-color: rgba(0, 122, 255, 0.8);
     border: 0.3rem solid transparent;
     border-radius: 50%;
     overflow: hidden;
@@ -69,7 +79,7 @@ html {
 }
 
 .menu div.barry {
-    width: 4rem;
+    width: 21rem;
     margin: 3.5rem auto;
 }
 
@@ -101,19 +111,15 @@ html {
     display: inline-block;
 }
 
-.menu ul li a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 1.5rem 2.5rem;
-    color: #fff;
-    font-size: 2rem;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    border: 0.3rem solid transparent;
-    border-radius: 0.5rem;
+.menu ul li p {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    color: #2ac0e9;
+}
+
+.fa {
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
 }
 
 .fa-folder {
@@ -125,30 +131,68 @@ html {
 
 /* Logo */
 
-#logo {
-    width: 66rem;
-    height: 41.25rem;
+#dci-logo {
+    width: 28.5rem;
+    height: 11.25rem;
     position: fixed;
-    top: 15%;
-    left: 31%;
-    /* border-radius: 50%; */
+    top: 24%;
+    left: 31.3%;
 }
+
+
+/* #logo {
+    width: 35vw;
+    height: 30vh;
+    position: fixed;
+    top: 24%;
+    left: 31.65%;
+  } */
 
 
 /* Buttons and Pages */
 
-input[type="radio"] {
+input[type=radio] {
     display: none;
 }
 
+.close-button label {
+    position: fixed;
+    top: 3vh;
+    right: 3vw;
+    cursor: pointer;
+    z-index: 3000;
+}
 
-/* Dream Page */
+
+/* Dream Page Attributes */
 
 .dreamPage {
     display: none;
     position: fixed;
-    top: 0;
+    top: 40%;
+    left: 40%;
+    animation-duration: 1s;
+    animation-name: createBox;
+}
+
+.dreamPage:after {
+    content: ' ';
+    display: block;
+    position: absolute;
     left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.05;
+    background-image: url('./images/future_developers.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 #dream:checked+.dreamPage {
@@ -164,13 +208,35 @@ input[type="radio"] {
 }
 
 
-/* Inspire Page */
+/* Inspire Page Attributes*/
 
 .inspirePage {
     display: none;
     position: fixed;
-    top: 0;
+    top: 40%;
+    left: 40%;
+    animation-duration: 1s;
+    animation-name: createBox;
+}
+
+.inspirePage:after {
+    content: ' ';
+    display: block;
+    position: absolute;
     left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.05;
+    background-image: url('./images/future_developers.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 #inspire:checked+.inspirePage {
@@ -186,13 +252,35 @@ input[type="radio"] {
 }
 
 
-/* Courage Page */
+/* Courage Page Attributes */
 
 .couragePage {
     display: none;
     position: fixed;
-    top: 0;
+    top: 40%;
+    left: 40%;
+    animation-duration: 1s;
+    animation-name: createBox;
+}
+
+.couragePage:after {
+    content: ' ';
+    display: block;
+    position: absolute;
     left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.05;
+    background-image: url('./images/future_developers.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 #courage:checked+.couragePage {
@@ -208,13 +296,35 @@ input[type="radio"] {
 }
 
 
-/* Harmony Page */
+/* Harmony Page Attributes */
 
 .harmonyPage {
     display: none;
     position: fixed;
-    top: 0;
+    top: 40%;
+    left: 40%;
+    animation-duration: 1s;
+    animation-name: createBox;
+}
+
+.harmonyPage:after {
+    content: ' ';
+    display: block;
+    position: absolute;
     left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.05;
+    background-image: url('./images/future_developers.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 #harmony:checked+.harmonyPage {
@@ -227,17 +337,24 @@ input[type="radio"] {
     border: 1.5rem solid #000;
     border-radius: 1rem;
     z-index: 1000;
-}
-
-#Dreams:checked+.dreamDiv {
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    z-index: 2;
+    overflow: hidden;
+    overflow: scroll;
 }
 
 
-/* smoke code */
+/* Page Animation */
+
+@keyframes createBox {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+/* Smoke Code */
 
 @keyframes smoke1 {
     0% {
@@ -310,22 +427,22 @@ input[type="radio"] {
 }
 
 .smoke-group {
-    width: 100px;
-    height: 200px;
+    width: 10rem;
+    height: 20rem;
     position: absolute;
-    top: 350px;
-    right: 410px;
+    top: 30%;
+    left: 70.8%;
 }
 
 .smoke {
     position: absolute;
     bottom: 0;
-    left: calc(50% - 15px / 2);
-    width: 15px;
-    height: 15px;
+    left: calc(50% - 1.5rem / 2);
+    width: 1.5rem;
+    height: 1.5rem;
     background-color: rgba(191, 189, 188, 0.822);
-    border-radius: 7.5px;
-    filter: blur(6px);
+    border-radius: 0.75rem;
+    filter: blur(0.6rem);
     opacity: 0;
 }
 
@@ -490,77 +607,330 @@ input[type="radio"] {
 }
 
 
-/* social media  */
+/* contact style css */
 
-.icon-pack4 {
-    position: absolute;
-    top: 58%;
-    left: 30%;
+@import url('https://fonts.googleapis.com/css?family=Chivo:400,700,900');
+
+/* INITIALIZE */
+
+body {
+    font-size: 20px;
+    /* background-color: rgb(117, 202, 202); */
 }
 
-.icon-pack4 ul li {
-    list-style-type: none;
-    padding: 5px;
-    display: table-cell;
-    text-align: center;
-}
-
-.icon-pack4 ul li a {
-    display: block;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background-color: #f1f1f1;
-    text-align: center;
-    border-radius: 50%;
-    padding: 6px;
-    box-sizing: border-box;
+a {
     text-decoration: none;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    background: -webkit-linear-gradient(0deg, #ccc, #fff);
-    transition: .5s;
 }
 
-.icon-pack4 ul li a:hover {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-    cursor: pointer;
+h1 {
+    font-family: 'Chivo', sans-serif;
+    font-size: 2em;
+    color: #4296fa;
+    font-weight: 900;
+    letter-spacing: .5em;
+    padding-left: 25px;
 }
 
-.icon-pack4 ul li a .fa {
-    width: 100%;
+.menu {
+    width: 33.3%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+h2 {
+    margin-top: 20px;
+    padding: 10px;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sectionHeader {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* ABOUT SECTION */
+
+.aboutSection {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;
+    border-right: 2px solid #4296fa;
+    position: relative;
+    height: 274.38px;
+}
+
+
+/* PHOTO CONTAINER */
+
+.myFace-container {
+    width: 20%;
+    overflow: hidden;
+    margin: 5%;
+    float: left;
     height: 100%;
-    display: block;
+}
+
+.aboutSection img {
+    width: 100%;
     border-radius: 50%;
-    line-height: calc(60px - 12px);
-    font-size: 30px;
-    background: -webkit-linear-gradient(0deg, #ccc, #fff);
-    background: -moz-linear-gradient(0deg, #ccc, #fff);
-    background: -o-linear-gradient(0deg, #ccc, #fff);
-    color: #262626;
-    transition: .5s;
+    padding: 10px;
+    border: 2px solid #4296fa;
 }
 
-.icon-pack4 ul li:nth-child(1) a:hover .fa {
-    color: #3b5999;
-    background: -webkit-linear-gradient(0deg, #fff, #ddd);
+
+/* ABOUT TEXT - PARAGRAPHS*/
+
+.aboutSection .about-p-container p {
+    font-family: 'Chivo', sans-serif;
+    font-size: .9em;
 }
 
-.icon-pack4 ul li:nth-child(2) a:hover .fa {
-    color: #dd4b39;
-    background: -webkit-linear-gradient(0deg, #fff, #ddd);
+.par1,
+.par2 {
+    height: 50%;
+    display: flex;
+    align-items: center;
 }
 
-.icon-pack4 ul li:nth-child(3) a:hover .fa {
-    color: #e4405f;
-    background: -webkit-linear-gradient(0deg, #fff, #ddd);
+.par1 {
+    border-bottom: 2px solid #4296fa;
 }
 
-.icon-pack4 ul li:nth-child(4) a:hover .fa {
-    background: -webkit-linear-gradient(0deg, #fff, #ddd);
-    color: #55acee;
+.about-p-container {
+    width: 70%;
+    overflow: hidden;
+    float: right;
+    height: 100%;
+    position: relative;
 }
 
-.icon-pack4 ul li:nth-child(5) a:hover .fa {
-    background: -webkit-linear-gradient(0deg, #fff, #ddd);
-    color: #007bb5;
+
+/* SECTION HEADER || PORTFOLIO*/
+
+.portfolioHeader {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.portfolioHeader h2 {
+    padding: 30px;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* PORTFOLIO SECTION */
+
+.demoSnaps {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    background: white;
+    border-right: 2px solid #4296fa;
+}
+
+.snaps-row1,
+.snaps-row2,
+.snaps-row3 {
+    width: 96%;
+    overflow: hidden;
+    border-right: 2px solid #4296fa;
+    background: rgba(35, 27, 21, .4);
+    margin: 2%;
+}
+
+.snaps-row1 img,
+.snaps-row2 img,
+.snaps-row3 img {
+    width: 40%;
+    float: left;
+    margin: 5% 5%;
+}
+
+
+/* SECTION HEADER || CONTACT*/
+
+.contactHeader h2 {
+    padding: 30px;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* CONTACT SECTION */
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    border-right: 2px solid #4296fa;
+}
+
+
+/* CONTACT SECTION || FORM*/
+
+
+/* Code based on CHRIS COYIER "Float Labels with CSS" https://css-tricks.com/float-labels-css/*/
+
+.contact-form-container {
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+form {
+    width: 80%;
+    float: left;
+    margin: 20px;
+    font-family: 'Chivo', sans-serif;
+}
+
+form>div {
+    position: relative;
+    margin: 20px 0;
+}
+
+form>div>label {
+    position: absolute;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    border: 2px solid gray;
+    background: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 8px 12px;
+    outline: 0;
+}
+
+form input:valid,
+form textarea:valid {
+    background: white;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #4296fa;
+}
+
+form input:focus+label,
+form textarea:focus+label {
+    background: #4296fa;
+    color: white;
+    font-size: 70%;
+    padding: 1px 6px;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+form label {
+    transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    position: absolute;
+    color: #999;
+    padding: 7px 6px;
+}
+
+form textarea {
+    display: block;
+    resize: vertical;
+}
+
+form label {
+    top: 0px;
+    right: 100%;
+    width: 100%;
+    margin-right: -100%;
+    bottom: 2px;
+    display: flex;
+    align-items: center;
+}
+
+form input:focus+label,
+form textarea:focus+label {
+    right: 0;
+    margin-right: 0;
+    width: 40%;
+    padding-top: 5px;
+}
+
+
+/* CONTACT SECTION || TEXT*/
+
+.contact-text-container {
+    width: 50%;
+    float: left;
+    font-family: 'Chivo', sans-serif;
+    font-size: .9em;
+}
+
+.contact-text-par1,
+.contact-text-par2 {
+    padding: 35px;
+    margin-left: 35px;
+    padding-left: 0;
+}
+
+.contact-text-par1 {
+    border-bottom: 2px solid #4296fa;
+}
+
+
+/* FOOTER*/
+
+footer {
+    width: 100%;
+    height: 70px;
+    background: #b8cae03b;
+    margin-top: 35px;
+    overflow: hidden;
+}
+
+footer div {
+    width: 50%;
+    float: left;
+}
+
+
+/* FOOTER || COPYTEXT */
+
+.copyText {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: 'Chivo', sans-serif;
+    padding-left: 19%;
+}
+
+@media only screen and (max-width: 687px) {
+    .nav-container-menu {
+        width: 65%;
+    }
 }
