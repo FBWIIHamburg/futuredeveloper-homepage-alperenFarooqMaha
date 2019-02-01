@@ -1,250 +1,354 @@
+/* fonts
+font-family: 'Lobster', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Abel', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Dancing Script', cursive; 
+font-family: 'Oxygen', sans-serif;
+*/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Bitter', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
+    font-family: 'Oxygen', sans-serif;
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+        font-family: 'Oxygen', sans-serif;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+        font-family: 'Oxygen', sans-serif;
+    }
+}
+
+@media only screen and (min-width: 112.5em) {
+    html {
+        font-size: 75%;
+        font-family: 'Oxygen', sans-serif;
+    }
 }
 
 /* Fix Body and Background */
 
-body{
-  position: fixed; 
-  overflow-y: scroll;
-  top: 0; right: 0; bottom: 0; left: 0;
+body {
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 /* Background */
 
 #background {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* Toggle Menu */
 
 .navigation-menu {
-  position: fixed;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #mmeennuu {
-  display: none;
-
+    display: none;
 }
 
-#mmeennuu:checked~.menu {
-  padding-left: 4rem;
-  width: 75rem;
-  border-radius: 0.5rem;
-  background-color: transparent;
-  border: 0.4rem solid #000000a2;
-  height: 10rem;
-  background-color: rgba(177, 177, 177, 0.219);
+#mmeennuu:checked ~ .menu {
+    padding-left: 4rem;
+    width: 75rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: 0.4rem solid #000000a2;
+    height: 10rem;
+    background-color: rgba(177, 177, 177, 0.219);
 }
 
-#mmeennuu:checked~.menu>ul {
-  display: block;
-  opacity: 1;
+#mmeennuu:checked ~ .menu > ul {
+    display: block;
+    opacity: 1;
 }
 
-#mmeennuu:checked~.menu>.barry {
-  display: none;
+#mmeennuu:checked ~ .menu > .barry {
+    display: none;
 }
 
 .menu {
-  display: block;
-  margin: 3rem auto;
-  width: 10rem;
-  height: 10rem;
-  background-color: rgba(88, 88, 88, 0.404);
-  border: 0.3rem solid transparent;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
+    display: block;
+    margin: 3rem auto;
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(88, 88, 88, 0.404);
+    border: 0.3rem solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
 }
 
 .menu div.barry {
-  width: 4rem;
-  margin: 3.5rem auto;
+    width: 4rem;
+    margin: 3.5rem auto;
 }
 
 .menu div.barry .bar {
-  display: block;
-  width: 100%;
-  height: 0.5rem;
-  margin-top: 0.3rem;
-  border-radius: 0.2rem;
-  background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 0.5rem;
+    margin-top: 0.3rem;
+    border-radius: 0.2rem;
+    background-color: #fff;
 }
 
 .menu ul {
-  opacity: 0;
-  display: none;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  list-style-type: none;
-  padding: 0;
-  width: 65rem;
-  text-align: center;
-  margin-bottom: 0;
+    opacity: 0;
+    display: none;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    list-style-type: none;
+    padding: 0;
+    width: 65rem;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .menu ul li {
-  display: inline-block;
+    display: inline-block;
 }
 
 .menu ul li p {
-  font-size: 1.5rem;
-  letter-spacing: 0.5rem;
-  color: #2ac0e9;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    color: #2ac0e9;
 }
 
 .fa {
-  padding-right: 3.5rem;
-  padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
 }
 
 .fa-folder {
-  font-size: 7rem;
-  color: #17c0eb;
-  border: 2px solid transparent;
+    font-size: 7rem;
+    color: #17c0eb;
+    border: 2px solid transparent;
 }
 
 /* Logo */
 
 #our-logo {
-  width: 40rem;
-  height: 25rem;
-  position: fixed;
-  top: 25%;
-  left: 38.5%;
+    width: 35rem;
+    height: 20rem;
+    position: fixed;
+    top: 20rem;
+    left: 58rem;
 }
 
 /* Buttons and Pages */
 
 input[type=radio] {
-  display: none;
+    display: none;
 }
 
 .close-button label {
-  position: fixed;
-  top: 3vh;
-  right: 3vw;
-  cursor: pointer;
-  z-index: 3000;
+    position: fixed;
+    top: 3vh;
+    right: 3vw;
+    cursor: pointer;
+    z-index: 3000;
 }
 
 /* Dream Page Attributes */
 
 .dreamPage {
-  display: none;
-  position: fixed;
-  top: 40%;
-  left: 40%;
-  animation-duration: 1s;
-  animation-name: createBox;
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    animation-duration: 1s;
+    animation-name: createBox;
 }
 
 .dreamPage:after {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0.05;
-  background-image: url('./images/future_developers.jpg');
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.05;
+    background-image: url("./images/future_developers.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
-#dream:checked+.dreamPage {
-  display: block;
-  width: 80vw;
-  height: 80vh;
+#dream:checked + .dreamPage {
+    display: block;
+    width: 80vw;
+    height: 80vh;
+    top: 0;
+    left: 10vw;
+    background-color: #fff;
+    border: 1.5rem solid #000;
+    border-radius: 1rem;
+    z-index: 1000;
+}
+.myVideo1{
+  position: sticky;
+  height: 100%;
+  width: 105%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.5;
+}
+.title-text1 {
+  position: absolute;
   top: 0;
-  left: 10vw;
-  background-color: #fff;
-  border: 1.5rem solid #000;
-  border-radius: 1rem;
-  z-index: 1000;
+  left: 35%;
+  font-size: 9rem;
+  font-weight: 300;
+  font-family: 'Lobster', cursive;
+  color: #fff;
+  /* background-color: rgba(128, 128, 128, 0.253); */
+  display: block;
+  text-shadow:     
+  3px 3px 0 #000,
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  animation-name: moveLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  z-index: 2;
+}
+.folder-header1 {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  background-color: rgba(212, 212, 212, 0.562);
+  width: 100%;
+  height: 16vh;
+  z-index: 1;
+}
+
+.folder-header1 > p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 5rem;
+  margin-top: 1rem;
+  color: black;
+  text-align: center;
+}
+
+.skills-div1 {
+  position: absolute;
+  top: 40rem;
+  background-color: rgba(71, 71, 71, 0.288);
+  width: 100%;
+  height: 60vh;
+  z-index: 2;
+  padding-top: 1rem;
+}
+/* .our-skills1 {
+  position: absolute;
+  top: 35rem;
+  font-size: 3rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #fff;
+} */
+.skills1 {
+  list-style: circle;
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  overflow: hidden;
 }
 
 /* Inspire Page Attributes*/
 
 .inspirePage {
-  display: none;
-  position: fixed;
-  top: 40%;
-  left: 40%;
-  animation-duration: 1s;
-  animation-name: createBox;
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    animation-duration: 1s;
+    animation-name: createBox;
 }
 
 .inspirePage:after {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0.05;
-  background-image: url('./images/future_developers.jpg');
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.05;
+    background-image: url("./images/future_developers.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
-#inspire:checked+.inspirePage {
-  display: block;
-  width: 80vw;
-  height: 80vh;
-  top: 0;
-  left: 10vw;
-  background-color: #fff;
-  border: 1.5rem solid #000;
-  border-radius: 1rem;
-  z-index: 1000;
+#inspire:checked + .inspirePage {
+    display: block;
+    width: 80vw;
+    height: 80vh;
+    top: 0;
+    left: 10vw;
+    background-color: #fff;
+    border: 1.5rem solid #000;
+    border-radius: 1rem;
+    z-index: 1000;
 }
 
 /* Courage Page Attributes */
 
 .couragePage {
-  display: none;
-  position: fixed;
-  top: 40%;
-  left: 40%;
-  animation-duration: 1s;
-  animation-name: createBox;
-  z-index: 1;
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    height: 100vh;
+    animation-duration: 1s;
+    animation-name: createBox;
+    z-index: 1;
+    overflow-y: scroll;
 }
 
 /* .couragePage:after {
@@ -267,393 +371,556 @@ input[type=radio] {
   background-size: cover;
 } */
 
-#courage:checked+.couragePage {
-  display: block;
-  width: 80vw;
-  height: 80vh;
-  top: 0;
-  left: 10vw;
-  background-color: #fff;
-  border: 1.5rem solid #000;
-  border-radius: 1rem;
-  z-index: 1000;
+#courage:checked + .couragePage {
+    display: block;
+    width: 80vw;
+    height: 80vh;
+    top: 0;
+    left: 10vw;
+    background-color: #fff;
+    border: 1.5rem solid #000;
+    border-radius: 1rem;
+    z-index: 1000;
+    overflow-y: scroll;
 }
 
-.techContainer{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.myVideo{
-  position: sticky;
-  height: 100%;
-  width: 105%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.3;
+.techContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.title-text{
-  position: absolute;
-  top: 0;
-  left: 35%;
-  font-size: 9rem;
-  font-weight: 300;
-  font-family: 'Lobster', cursive;
-  color: black;
-  background-color: rgba(128, 128, 128, 0.253);
-  display: block;
-  text-shadow:
-  3px 3px 0 rgb(131, 131, 131),
--1px -1px 0 rgb(131, 131, 131),  
- 1px -1px 0 rgb(131, 131, 131),
- -1px 1px 0 rgb(131, 131, 131),
-  1px 1px 0 rgb(131, 131, 131);
-  animation-name: moveLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  z-index: 2;
+.myVideo {
+    position: sticky;
+    height: 100%;
+    width: 105%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.3;
 }
-.linecouarg{
-  position: absolute;
-  top: 15%;
-  left: 43%;
-  background-color: #000;
-  width: 15%;
-  height: 0.5rem;
-  z-index: 2;
-  margin: auto;
-  margin-bottom: 3rem;
-  transition-property: all;
-  transition-duration: 0.8s;
-  transition-timing-function: linear;
-}
-.title-text:hover +.linecouarg{
-  width: 32%;
-  left: 34%;
 
-  box-shadow:
-  3px 3px 0 rgb(131, 131, 131),
--1px -1px 0 rgb(131, 131, 131),  
- 1px -1px 0 rgb(131, 131, 131),
- -1px 1px 0 rgb(131, 131, 131),
-  1px 1px 0 rgb(131, 131, 131);
+.title-text {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    font-size: 9rem;
+    font-weight: 300;
+    font-family: 'Lobster', cursive;
+    color: #485460;
+    /* background-color: rgba(128, 128, 128, 0.253); */
+    display: block;
+    text-shadow: 
+    3px 3px 0 #d1ccc0,
+    -1px -1px 0 #d1ccc0,
+    1px -1px 0 #d1ccc0,
+    -1px 1px 0 #d1ccc0,
+    1px 1px 0 #d1ccc0;
+    animation-name: moveLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    z-index: 2;
 }
+
+.folder-header {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.705);
+    width: 100%;
+    height: 20vh;
+    z-index: 1;
+}
+
+.folder-header > p {
+    font-family: 'Abel', sans-serif;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+}
+
+/* skills */
+
+.our-skills {
+    position: absolute;
+    top: 35rem;
+    font-size: 3rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.skills-div {
+    position: absolute;
+    top: 43rem;
+    background-color: rgba(138, 138, 138, 0.288);
+    width: 100%;
+    height: 60vh;
+    z-index: 2;
+}
+
+.skills {
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.skills .skill {
+    display: block;
+    position: relative;
+    height: 60px;
+    margin: 10px auto;
+    width: 90%;
+}
+
+@media only screen and (min-width: 900px) {
+    .skills .skill {
+        display: inline-block;
+        width: 25%;
+        margin: 10px;
+    }
+}
+
+.skills .skill:before, .skills .skill:after {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.skills .skill:before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    background: #eeeeee;
+}
+
+.skills .skill:after {
+    background-color: #2ea994;
+    background: repeating-linear-gradient(-45deg, #2ea994, #2ea994 10px, #31b59f 10px, #31b59f 20px);
+    height: 16px;
+    top: 2px;
+    right: 95%;
+    bottom: 2px;
+    left: 2px;
+    -webkit-animation: fill 2s both;
+    -moz-animation: fill 2s both;
+    animation: fill 2s both;
+}
+
+.skills .skill:nth-child(1):after {
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.skills .skill:nth-child(2):after {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.skills .skill:nth-child(3):after {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.skills .skill:nth-child(4):after {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.skills .skill:nth-child(5):after {
+    -webkit-animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.skills .skill:nth-child(6):after {
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+.skills .skill[aria-label="css"]:after {
+    right: 15%;
+}
+
+.skills .skill[aria-label="javascript"]:after {
+    right: 20%;
+}
+
+/* .skills .skill[aria-label="adept"]:after {
+  right: 35%;
+} */
+.skills .skill[aria-label="html"]:after {
+    right: 10%;
+}
+
+/* .skills .skill[aria-label="elite"]:after {
+  right: 10%;
+} */
+.skills .skill[aria-label="scss"]:after {
+    right: 25%;
+}
+
+.skills .skill[aria-label="jquery"]:after {
+    right: 30%;
+}
+
+.skills .skill[aria-label="node.js"]:after {
+    right: 40%;
+}
+
+@-webkit-keyframes fill {
+    from {
+        right: 100%;
+    }
+}
+
+@-moz-keyframes fill {
+    from {
+        right: 100%;
+    }
+}
+
+@keyframes fill {
+    from {
+        right: 100%;
+    }
+}
+
 /* Harmony Page Attributes */
 
 .harmonyPage {
-  display: none;
-  position: fixed;
-  top: 40%;
-  left: 40%;
-  animation-duration: 1s;
-  animation-name: createBox;
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    animation-duration: 1s;
+    animation-name: createBox;
 }
 
 .harmonyPage:after {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0.05;
-  background-image: url('./images/future_developers.jpg');
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.05;
+    background-image: url("./images/future_developers.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
-#harmony:checked+.harmonyPage {
-  display: block;
-  width: 80vw;
-  height: 80vh;
-  top: 0;
-  left: 10vw;
-  background-color: #fff;
-  border: 1.5rem solid #000;
-  border-radius: 1rem;
-  z-index: 1000;
+#harmony:checked + .harmonyPage {
+    display: block;
+    width: 80vw;
+    height: 80vh;
+    top: 0;
+    left: 10vw;
+    background-color: #fff;
+    border: 1.5rem solid #000;
+    border-radius: 1rem;
+    z-index: 1000;
 }
 
 /* Page Animation */
 
 @keyframes createBox {
-  from {
-    transform: scale(0);
-  }
+    from {
+        transform: scale(0);
+    }
 
-  to {
-    transform: scale(1);
-  }
+    to {
+        transform: scale(1);
+    }
 }
 
+/* @keyframes moveLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+  }
 
+  80% {
+      transform: translateX(1rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+} */
 /* Smoke Code */
 
 @keyframes smoke1 {
-  0% {
-    transform: scale(0.2);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
 
-  10% {
-    opacity: 1;
-  }
+    10% {
+        opacity: 1;
+    }
 
-  100% {
-    transform: scale(3) translate(-4px, -47px);
-    opacity: 0;
-  }
+    100% {
+        transform: scale(3) translate(-4px, -47px);
+        opacity: 0;
+    }
 }
 
 @keyframes smoke2 {
-  0% {
-    transform: scale(0.2);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
 
-  10% {
-    opacity: 1;
-  }
+    10% {
+        opacity: 1;
+    }
 
-  100% {
-    transform: scale(3) translate(-7px, -49px);
-    opacity: 0;
-  }
+    100% {
+        transform: scale(3) translate(-7px, -49px);
+        opacity: 0;
+    }
 }
 
 @keyframes smoke3 {
-  0% {
-    transform: scale(0.2);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
 
-  10% {
-    opacity: 1;
-  }
+    10% {
+        opacity: 1;
+    }
 
-  100% {
-    transform: scale(3) translate(3px, -33px);
-    opacity: 0;
-  }
+    100% {
+        transform: scale(3) translate(3px, -33px);
+        opacity: 0;
+    }
 }
 
 @keyframes smoke4 {
-  0% {
-    transform: scale(0.2);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
 
-  10% {
-    opacity: 1;
-  }
+    10% {
+        opacity: 1;
+    }
 
-  100% {
-    transform: scale(3) translate(-4px, -50px);
-    opacity: 0;
-  }
+    100% {
+        transform: scale(3) translate(-4px, -50px);
+        opacity: 0;
+    }
 }
 
 @keyframes smoke5 {
-  0% {
-    transform: scale(0.2);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
 
-  10% {
-    opacity: 1;
-  }
+    10% {
+        opacity: 1;
+    }
 
-  100% {
-    transform: scale(3) translate(-1px, -36px);
-    opacity: 0;
-  }
+    100% {
+        transform: scale(3) translate(-1px, -36px);
+        opacity: 0;
+    }
 }
 
 .smoke-group {
-  width: 10rem;
-  height: 20rem;
-  position: absolute;
-  top: 25%;
-  left: 70%;
+    width: 10rem;
+    height: 20rem;
+    position: absolute;
+    top: 25%;
+    left: 70%;
 }
 
 .smoke {
-  position: absolute;
-  bottom: 0;
-  left: calc(50% - 1.5rem / 2);
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: rgba(191, 189, 188, 0.822);
-  border-radius: 0.75rem;
-  filter: blur(0.6rem);
-  opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 1.5rem / 2);
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgba(191, 189, 188, 0.822);
+    border-radius: 0.75rem;
+    filter: blur(0.6rem);
+    opacity: 0;
 }
 
 .smoke:nth-child(1) {
-  animation-name: smoke3;
-  animation-duration: 4s;
-  animation-timing-function: ease-out;
-  animation-delay: 0.4s;
-  animation-iteration-count: infinite;
+    animation-name: smoke3;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(2) {
-  animation-name: smoke5;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-delay: 0.8s;
-  animation-iteration-count: infinite;
+    animation-name: smoke5;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.8s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(3) {
-  animation-name: smoke2;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;
-  animation-delay: 1.2s;
-  animation-iteration-count: infinite;
+    animation-name: smoke2;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.2s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(4) {
-  animation-name: smoke2;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-delay: 1.6s;
-  animation-iteration-count: infinite;
+    animation-name: smoke2;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.6s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(5) {
-  animation-name: smoke5;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
+    animation-name: smoke5;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(6) {
-  animation-name: smoke1;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
-  animation-delay: 2.4s;
-  animation-iteration-count: infinite;
+    animation-name: smoke1;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 2.4s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(7) {
-  animation-name: smoke4;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-delay: 2.8s;
-  animation-iteration-count: infinite;
+    animation-name: smoke4;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 2.8s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(8) {
-  animation-name: smoke1;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-delay: 3.2s;
-  animation-iteration-count: infinite;
+    animation-name: smoke1;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 3.2s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(9) {
-  animation-name: smoke1;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
-  animation-delay: 3.6s;
-  animation-iteration-count: infinite;
+    animation-name: smoke1;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 3.6s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(10) {
-  animation-name: smoke1;
-  animation-duration: 4s;
-  animation-timing-function: ease-out;
-  animation-delay: 4s;
-  animation-iteration-count: infinite;
+    animation-name: smoke1;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(11) {
-  animation-name: smoke1;
-  animation-duration: 4s;
-  animation-timing-function: ease-out;
-  animation-delay: 4.4s;
-  animation-iteration-count: infinite;
+    animation-name: smoke1;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 4.4s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(12) {
-  animation-name: smoke1;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;
-  animation-delay: 4.8s;
-  animation-iteration-count: infinite;
+    animation-name: smoke1;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 4.8s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(13) {
-  animation-name: smoke1;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;
-  animation-delay: 5.2s;
-  animation-iteration-count: infinite;
+    animation-name: smoke1;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 5.2s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(14) {
-  animation-name: smoke1;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-delay: 5.6s;
-  animation-iteration-count: infinite;
+    animation-name: smoke1;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 5.6s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(15) {
-  animation-name: smoke1;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
-  animation-delay: 6s;
-  animation-iteration-count: infinite;
+    animation-name: smoke1;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(16) {
-  animation-name: smoke1;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
-  animation-delay: 6.4s;
-  animation-iteration-count: infinite;
+    animation-name: smoke1;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 6.4s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(17) {
-  animation-name: smoke3;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-delay: 6.8s;
-  animation-iteration-count: infinite;
+    animation-name: smoke3;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 6.8s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(18) {
-  animation-name: smoke4;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;
-  animation-delay: 7.2s;
-  animation-iteration-count: infinite;
+    animation-name: smoke4;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 7.2s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(19) {
-  animation-name: smoke1;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;
-  animation-delay: 7.6s;
-  animation-iteration-count: infinite;
+    animation-name: smoke1;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 7.6s;
+    animation-iteration-count: infinite;
 }
 
 .smoke:nth-child(20) {
-  animation-name: smoke5;
-  animation-duration: 4s;
-  animation-timing-function: ease-out;
-  animation-delay: 8s;
-  animation-iteration-count: infinite;
+    animation-name: smoke5;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 8s;
+    animation-iteration-count: infinite;
 }
