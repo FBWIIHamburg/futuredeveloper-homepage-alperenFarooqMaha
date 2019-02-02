@@ -11,10 +11,13 @@ html {
 
 /* Fix Body and Background */
 
-body{
-  position: fixed; 
+body {
+  position: fixed;
   overflow-y: scroll;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 /* Background */
@@ -45,7 +48,7 @@ body{
   background-color: transparent;
   border: 0.4rem solid #4296fa;
   height: 10rem;
-  background-color: #000;
+  background-color: #fff;
 }
 
 #mmeennuu:checked~.menu>ul {
@@ -62,7 +65,7 @@ body{
   margin: 3rem auto;
   width: 10rem;
   height: 10rem;
-  background-color: #C0C0C0	;
+  background-color: #C0C0C0;
   border: 0.3rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
@@ -110,7 +113,7 @@ body{
 .menu ul li p {
   font-size: 1.5rem;
   letter-spacing: 0.5rem;
-  color: #2ac0e9;
+  color: #000;
 }
 
 .fa {
@@ -196,7 +199,34 @@ input[type=radio] {
   background-color: #fff;
   border: 1.5rem solid #000;
   border-radius: 1rem;
+  overflow: scroll;
   z-index: 1000;
+
+}
+
+.pageHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(212, 212, 212, 0.562);
+  width: 100%;
+  height: 25%;
+}
+
+.pageHeader>p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  margin-top: 1rem;
+  color: black;
+  text-align: center;
+  animation-name: moveup;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.videoContent{
+  position: absolute;
+  top: 15rem;
+  left: 22rem;
 }
 
 /* Inspire Page Attributes*/
@@ -285,9 +315,9 @@ input[type=radio] {
   z-index: 1000;
 }
 
-/* Harmony Page Attributes */
+/* Contact Page Attributes */
 
-.harmonyPage {
+.contactPage {
   display: none;
   position: fixed;
   top: 40%;
@@ -296,7 +326,7 @@ input[type=radio] {
   animation-name: createBox;
 }
 
-.harmonyPage:after {
+.contactPage:after {
   content: ' ';
   display: block;
   position: absolute;
@@ -316,7 +346,7 @@ input[type=radio] {
   background-size: cover;
 }
 
-#harmony:checked+.harmonyPage {
+#contact:checked+.contactPage {
   display: block;
   width: 80vw;
   height: 80vh;
@@ -337,6 +367,54 @@ input[type=radio] {
 
   to {
     transform: scale(1);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100rem);
+  }
+
+  80% {
+    transform: translateX(-10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100rem);
+  }
+
+  80% {
+    transform: translateX(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveup {
+  0% {
+    opacity: 0;
+    transform: translateY(100rem);
+  }
+
+  80% {
+    transform: translateY(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
 
@@ -428,7 +506,7 @@ input[type=radio] {
   height: 20rem;
   position: absolute;
   top: 25%;
-  left: 70%;
+  left: 75%;
 }
 
 .smoke {
