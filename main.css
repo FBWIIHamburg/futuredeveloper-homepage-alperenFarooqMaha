@@ -62,7 +62,7 @@ body{
   margin: 3rem auto;
   width: 10rem;
   height: 10rem;
-  background-color: rgba(0, 122, 255, 0.8);
+  background-color: #C0C0C0	;
   border: 0.3rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
