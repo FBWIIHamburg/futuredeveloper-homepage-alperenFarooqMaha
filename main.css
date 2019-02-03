@@ -300,6 +300,38 @@ input[type=radio] {
   z-index: 1000;
 }
 
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.item6>p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  color: black;
+  text-align: center;
+  background-color: lightgrey;
+}
+
 /* Courage Page Attributes */
 
 .couragePage {
@@ -667,4 +699,20 @@ input[type=radio] {
   animation-timing-function: ease-out;
   animation-delay: 8s;
   animation-iteration-count: infinite;
+}
+
+
+/* Responsive Image Gallery*/
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
 }
