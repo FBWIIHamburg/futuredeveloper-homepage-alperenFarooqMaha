@@ -127,24 +127,6 @@ body {
   border: 2px solid transparent;
 }
 
-/* Logo */
-
-/* #dci-logo {
-  width: 28.5rem;
-  height: 11.25rem;
-  position: fixed;
-  top: 24%;
-  left: 31.3%;
-} */
-
-/* #logo {
-  width: 35vw;
-  height: 30vh;
-  position: fixed;
-  top: 24%;
-  left: 31.65%;
-} */
-
 /* Buttons and Pages */
 
 input[type=radio] {
@@ -160,23 +142,29 @@ input[type=radio] {
 }
 
 /* Grid Container */
-.item1 { grid-area: header; }
-.item2 { grid-area: main; }
-.item3 { grid-area: col-1; }
-.item4 { grid-area: col-2; }
-.item5 { grid-area: col-3; }
-.item6 { grid-area: footer; }
+.item1 {
+  grid-area: header;
+}
 
+.item2 {
+  grid-area: main;
+}
 
+.item3 {
+  grid-area: col-1;
+}
 
-/* .myVideo {
-  position: sticky;
-  height: 100%;
-  width: 105%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.3;
-} */
+.item4 {
+  grid-area: col-2;
+}
+
+.item5 {
+  grid-area: col-3;
+}
+
+.item6 {
+  grid-area: footer;
+}
 
 /* Dream Page Attributes */
 
@@ -191,11 +179,11 @@ input[type=radio] {
 
 .dream-container {
   display: grid;
-  grid-template: 
-  "header header header"
-  "main main main"
-  "col-1 col-2 col-3"
-  "footer footer footer";
+  grid-template:
+    "header header header"
+    "main main main"
+    "col-1 col-2 col-3"
+    "footer footer footer";
   grid-gap: 1rem;
   padding: 1rem;
   background-color: #fff;
@@ -206,7 +194,7 @@ input[type=radio] {
   overflow-y: scroll;
 }
 
-.dream-container > div {
+.dream-container>div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
@@ -224,15 +212,6 @@ input[type=radio] {
   border-radius: 1rem;
   z-index: 1000;
 
-}
-
-.pageHeader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(212, 212, 212, 0.562);
-  width: 100%;
-  height: 25%;
 }
 
 .item1>p {
@@ -260,11 +239,12 @@ input[type=radio] {
   padding: 1rem;
   border: 1px solid #4296fa;
 }
-.profile-details{
+
+.profile-details {
   float: left;
 }
 
-.profile-details>p{
+.profile-details>p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5rem;
   margin-top: 1rem;
