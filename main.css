@@ -159,24 +159,24 @@ input[type=radio] {
   z-index: 3000;
 }
 
-/* Main Container */
+/* Grid Container */
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: col-1; }
+.item4 { grid-area: col-2; }
+.item5 { grid-area: col-3; }
+.item6 { grid-area: footer; }
 
-.mainContainer {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  overflow-y: scroll;
-}
 
-.myVideo {
+
+/* .myVideo {
   position: sticky;
   height: 100%;
   width: 105%;
   object-fit: cover;
   z-index: -1;
   opacity: 0.3;
-}
+} */
 
 /* Dream Page Attributes */
 
@@ -189,25 +189,29 @@ input[type=radio] {
   animation-name: createBox;
 }
 
-/* .dreamPage:after {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
+.dream-container {
+  display: grid;
+  grid-template: 
+  "header header header"
+  "main main main"
+  "col-1 col-2 col-3"
+  "footer footer footer";
+  grid-gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  position: relative;
   width: 100%;
   height: 100%;
-  z-index: 1;
-  opacity: 0.05;
-  background-image: url('./images/future_developers.jpg');
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-} */
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.dream-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
 
 #dream:checked+.dreamPage {
   display: block;
@@ -231,40 +235,43 @@ input[type=radio] {
   height: 25%;
 }
 
-.pageHeader>p {
+.item1>p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 4rem;
-  margin-top: 1rem;
   color: black;
   text-align: center;
-  animation-name: moveup;
+  background-color: lightgrey;
+  animation-name: moveRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
-.videoContent{
-  position: absolute;
-  top: 15rem;
-  left: 22rem;
+
+.profile-photo-container {
+  width: 25%;
+  overflow: hidden;
+  margin: 0;
+  float: left;
+  height: 100%;
 }
 
-.pageContent {
-  position: absolute;
-  top: 70%;
-  left: 0;
-  background-color: rgba(212, 212, 212, 0.562);
+.profile-photo {
   width: 100%;
-  height: 25%;
+  border-radius: 50%;
+  padding: 1rem;
+  border: 1px solid #4296fa;
+}
+.profile-details{
+  float: left;
 }
 
-.pageContent>p {
+.profile-details>p{
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 4rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
+  margin-left: 0.3rem;
   color: black;
   text-align: center;
-  animation-name: moveleft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+  background-color: lightgrey;
 }
 
 /* Inspire Page Attributes*/
@@ -277,26 +284,6 @@ input[type=radio] {
   animation-duration: 1s;
   animation-name: createBox;
 }
-
-/* .inspirePage:after {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0.05;
-  background-image: url('./images/future_developers.jpg');
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-} */
 
 #inspire:checked+.inspirePage {
   display: block;
@@ -321,26 +308,6 @@ input[type=radio] {
   animation-name: createBox;
 }
 
-/* .couragePage:after {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0.05;
-  background-image: url('./images/future_developers.jpg');
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-} */
-
 #courage:checked+.couragePage {
   display: block;
   width: 80vw;
@@ -363,26 +330,6 @@ input[type=radio] {
   animation-duration: 1s;
   animation-name: createBox;
 }
-
-/* .contactPage:after {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0.05;
-  background-image: url('./images/future_developers.jpg');
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-} */
 
 #contact:checked+.contactPage {
   display: block;
